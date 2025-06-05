@@ -1,0 +1,22 @@
+{
+  "name": "poundshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbparekh0510/Poundshop_Automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbparekh0510/Poundshop_Automation/issues"
+  },
+  "homepage": "https://github.com/hbparekh0510/Poundshop_Automation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.27"
+  }
+}

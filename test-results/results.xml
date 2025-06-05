@@ -1,0 +1,54 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="38.245881000000004">
+<testsuite name="Live_sanity/1_login.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.815" errors="0">
+<testcase name="Login" classname="Live_sanity/1_login.spec.js" time="5.815">
+<system-out>
+<![CDATA[Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+✅ Checking if "PACKING" heading is visible...
+📸 Screenshot saved at: test-results/1_login-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/2_Dashboard.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.381" errors="0">
+<testcase name="Dashboard Page" classname="Live_sanity/2_Dashboard.spec.js" time="8.381">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Dashboard...
+Step 2: Dashboard link clicked.
+Step 3: Clicking on "MROS" main menu...
+Step 3: "MROS" menu clicked.
+Step 4: Clicking on "Sales" submenu...
+Step 4: "Sales" submenu clicked.
+Step 5: Clicking on "Stock" submenu...
+Step 5: "Stock" submenu clicked.
+Test completed successfully.
+📸 Screenshot saved at: test-results/2_Dashboard-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/3_New_Dashboard_Main_Dashboard.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.196" errors="0">
+<testcase name="New Dashboard_Main Dashboard" classname="Live_sanity/3_New_Dashboard_Main_Dashboard.spec.js" time="22.196">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Clicking on "New Dashboard"...
+Step 3: Clicking on Filter button...
+Step 4: Clicking on Shift Date input...
+Step 5: Selecting date "3" from calendar...
+Step 6: Clicking on Apply button...
+Step 7: Clicking on selected shift label...
+Step 8: Clicking on table header to sort...
+Test completed successfully.
+📸 Screenshot saved at: test-results/3_New_Dashboard_Main_Dashboard-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

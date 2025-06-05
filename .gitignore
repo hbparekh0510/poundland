@@ -1,0 +1,10 @@
+/node_modules/
+/Chromedriver/
+/TestResults/
+/TestData/
+/coverage/
+/.vscode/
+/.idea/
+/.env
+/Chromedriver/chrome-linux64/chrome
+/Chromedriver/chrome-win64/chrome.exe
