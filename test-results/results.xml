@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="38.245881000000004">
-<testsuite name="Live_sanity/1_login.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.815" errors="0">
-<testcase name="Login" classname="Live_sanity/1_login.spec.js" time="5.815">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="141.232712">
+<testsuite name="Live_sanity/1_login.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.426" errors="0">
+<testcase name="Login" classname="Live_sanity/1_login.spec.js" time="6.426">
 <system-out>
 <![CDATA[Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
@@ -10,8 +10,8 @@ Username: Hitesh
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Live_sanity/2_Dashboard.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.381" errors="0">
-<testcase name="Dashboard Page" classname="Live_sanity/2_Dashboard.spec.js" time="8.381">
+<testsuite name="Live_sanity/2_Dashboard.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.164" errors="0">
+<testcase name="Dashboard Page" classname="Live_sanity/2_Dashboard.spec.js" time="8.164">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
@@ -31,22 +31,89 @@ Test completed successfully.
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Live_sanity/3_New_Dashboard_Main_Dashboard.spec.js" timestamp="2025-06-04T09:32:11.057Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.196" errors="0">
-<testcase name="New Dashboard_Main Dashboard" classname="Live_sanity/3_New_Dashboard_Main_Dashboard.spec.js" time="22.196">
+<testsuite name="Live_sanity/3_New_Dashboard.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="34.59" errors="0">
+<testcase name="New Dashboard Page &amp; TV Dashboard" classname="Live_sanity/3_New_Dashboard.spec.js" time="34.59">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
 Step 1: Login successful.
-Step 2: Clicking on "New Dashboard"...
-Step 3: Clicking on Filter button...
-Step 4: Clicking on Shift Date input...
-Step 5: Selecting date "3" from calendar...
-Step 6: Clicking on Apply button...
-Step 7: Clicking on selected shift label...
-Step 8: Clicking on table header to sort...
+Navigating to New Dashboard
+Opening filter options
+Opening shift date selector
+Selecting date 8
+Applying selected filters
+Navigating to Picking
+Navigating to Packing
+Navigating to Put Away
+Navigating to Replen
+Opening More menu
+Navigating to Goods In
+Opening More menu again
+Navigating to Forecast
+Opening More menu for the third time
+Navigating to Tv Dashboard
+Waiting for new popup page after clicking Darton 1
+Clicking exact Order Well
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/4_Stock_Inventory.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="35.972" errors="0">
+<testcase name="Dashboard Page - Stock Inventory Search and Filter" classname="Live_sanity/4_Stock_Inventory.spec.js" time="35.972">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Navigating to Inventory +
+Navigating to Stock Inventory
+Clicking on search textbox
+Filling in SKU: 940883
+Pressing Enter to search
+Clearing the search filter
+Opening filter panel
+Clicking on "Show In Stock Products only" checkbox
+Applying the filter
+Clearing the filter
+Test execution completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/5_Poundland_Listing.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="30.867" errors="0">
+<testcase name="Poundland Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/5_Poundland_Listing.spec.js" time="30.867">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Inventory +
+Step 3: Navigating to Poundland Listing
+Step 4: Clicking on "To Be Listed" tab
+Step 5: Clicking on "In Progress" tab
+Step 6: Clicking on "Already Listed" tab
+Step 7: Opening filter panel
+Step 8: Selecting "New Product" filter
+Step 9: Applying the filter
 Test completed successfully.
-📸 Screenshot saved at: test-results/3_New_Dashboard_Main_Dashboard-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/6_Swoopos_Listing.spec.js" timestamp="2025-06-11T06:01:34.819Z" hostname="chromium" tests="1" failures="0" skipped="0" time="23.39" errors="0">
+<testcase name="Swoopos Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/6_Swoopos_Listing.spec.js" time="23.39">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Inventory +
+Step 3: Navigating to Swoopos Listing
+Step 4: Clicking on "To Be Listed" tab
+Step 5: Clicking on "In Progress" tab
+Step 6: Clicking on "Already Listed" tab
+Test completed successfully.
 ]]>
 </system-out>
 </testcase>
