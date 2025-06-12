@@ -2,6 +2,24 @@ import { test, expect } from '@playwright/test';
 import path from 'path';
 import { login } from '../loginHelper.js'; // Adjust this path if needed
 
+// Helper function to select the previous day in a standard calendar
+async function selectPreviousDay(page) {
+  const today = new Date();
+  const prevDay = new Date(today);
+  prevDay.setDate(today.getDate() - 1);
+
+  const prevDayNum = prevDay.getDate().toString(); // e.g. "11"
+  console.log(`Selecting previous day: ${prevDay.toDateString()}`);
+
+  // Wait a moment to ensure calendar is rendered
+  await page.waitForTimeout(500);
+
+  // Use XPath to locate <td> element with exact text (e.g., <td>11</td>)
+  const dayLocator = page.locator(`xpath=//td[normalize-space(text())='${prevDayNum}']`);
+  await dayLocator.first().click();
+  await page.waitForTimeout(1000);
+}
+
 test('New Dashboard Page & TV Dashboard', async ({ page }, testInfo) => {
   // Step 1: Login to the application
   console.log('Step 1: Logging in...');
@@ -16,7 +34,7 @@ test('New Dashboard Page & TV Dashboard', async ({ page }, testInfo) => {
 
   // Clicking filter button
   console.log('Opening filter options');
-  await page.getByRole('button', { name: 'Filter (4) ' }).click();
+  await page.getByRole('button', { name: /Filter/i }).click();
   await page.waitForTimeout(1000);
 
   // Selecting shift date
@@ -24,9 +42,8 @@ test('New Dashboard Page & TV Dashboard', async ({ page }, testInfo) => {
   await page.locator('#shift_date').click();
   await page.waitForTimeout(1000);
 
-  console.log('Selecting date 8');
-  await page.getByRole('cell', { name: '8', exact: true }).click();
-  await page.waitForTimeout(1000);
+  // ✅ Select previous day in calendar
+  await selectPreviousDay(page);
 
   // Applying filter
   console.log('Applying selected filters');
@@ -35,8 +52,6 @@ test('New Dashboard Page & TV Dashboard', async ({ page }, testInfo) => {
 
   // Navigating to Picking module
   console.log('Navigating to Picking');
-  await page.getByRole('link', { name: 'Picking' }).click();
-  await page.waitForTimeout(1000);
   await page.getByRole('link', { name: 'Picking' }).click();
   await page.waitForTimeout(1000);
 
@@ -93,4 +108,6 @@ test('New Dashboard Page & TV Dashboard', async ({ page }, testInfo) => {
   console.log('Clicking exact Order Well');
   await page1.getByText('Order Well', { exact: true }).click();
   await page1.waitForTimeout(1000);
+
+  console.log('✅ Test Completed Successfully');
 });
