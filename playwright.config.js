@@ -23,7 +23,7 @@ reporter: [
  
     use: {
   headless: false, // <--- change this line
-  baseURL: process.env.BASE_URL || 'https://erp.poundshop.com/login',
+  baseURL: process.env.BASE_URL || 'https://preprod.poundshop.com/login',
   slowMo: 2000,
   trace: 'on-first-retry',
   screenshot: 'only-on-failure',

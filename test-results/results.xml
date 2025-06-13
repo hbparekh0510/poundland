@@ -1,120 +1,19 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="144.37435399999998">
-<testsuite name="Live_sanity/1_login.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.855" errors="0">
-<testcase name="Login" classname="Live_sanity/1_login.spec.js" time="5.855">
-<system-out>
-<![CDATA[Using login URL: https://erp.poundshop.com/login
-Username: Hitesh
-✅ Checking if "PACKING" heading is visible...
-📸 Screenshot saved at: test-results/1_login-success.png
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Live_sanity/2_Dashboard.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.745" errors="0">
-<testcase name="Dashboard Page" classname="Live_sanity/2_Dashboard.spec.js" time="8.745">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="28.870212">
+<testsuite name="Live_sanity/11_MROS_Summary_Report.spec.js" timestamp="2025-06-13T06:27:10.468Z" hostname="chromium" tests="1" failures="0" skipped="0" time="27.111" errors="0">
+<testcase name="MROS Summary Report" classname="Live_sanity/11_MROS_Summary_Report.spec.js" time="27.111">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
-Step 1: Login successful.
-Step 2: Navigating to Dashboard...
-Step 2: Dashboard link clicked.
-Step 3: Clicking on "MROS" main menu...
-Step 3: "MROS" menu clicked.
-Step 4: Clicking on "Sales" submenu...
-Step 4: "Sales" submenu clicked.
-Step 5: Clicking on "Stock" submenu...
-Step 5: "Stock" submenu clicked.
-Test completed successfully.
-📸 Screenshot saved at: test-results/2_Dashboard-success.png
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Live_sanity/3_New_Dashboard.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="34.351" errors="0">
-<testcase name="New Dashboard Page &amp; TV Dashboard" classname="Live_sanity/3_New_Dashboard.spec.js" time="34.351">
-<system-out>
-<![CDATA[Step 1: Logging in...
-Using login URL: https://erp.poundshop.com/login
-Username: Hitesh
-Step 1: Login successful.
-Navigating to New Dashboard
-Opening filter options
-Opening shift date selector
-Selecting previous day: Wed Jun 11 2025
-Applying selected filters
-Navigating to Picking
-Navigating to Packing
-Navigating to Put Away
-Navigating to Replen
-Opening More menu
-Navigating to Goods In
-Opening More menu again
-Navigating to Forecast
-Opening More menu for the third time
-Navigating to Tv Dashboard
-Waiting for new popup page after clicking Darton 1
-Clicking exact Order Well
-✅ Test Completed Successfully
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Live_sanity/4_Stock_Inventory.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="36.418" errors="0">
-<testcase name="Dashboard Page - Stock Inventory Search and Filter" classname="Live_sanity/4_Stock_Inventory.spec.js" time="36.418">
-<system-out>
-<![CDATA[Step 1: Logging in...
-Using login URL: https://erp.poundshop.com/login
-Username: Hitesh
-Step 1: Login successful.
-Navigating to Inventory +
-Navigating to Stock Inventory
-Clicking on search textbox
-Filling in SKU: 940883
-Pressing Enter to search
-Clearing the search filter
-Opening filter panel
-Clicking on "Show In Stock Products only" checkbox
-Applying the filter
-Clearing the filter
-Test execution completed successfully.
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Live_sanity/5_Poundland_Listing.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="31.452" errors="0">
-<testcase name="Poundland Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/5_Poundland_Listing.spec.js" time="31.452">
-<system-out>
-<![CDATA[Step 1: Logging in...
-Using login URL: https://erp.poundshop.com/login
-Username: Hitesh
-Step 1: Login successful.
-Step 2: Navigating to Inventory +
-Step 3: Navigating to Poundland Listing
-Step 4: Clicking on "To Be Listed" tab
-Step 5: Clicking on "In Progress" tab
-Step 6: Clicking on "Already Listed" tab
-Step 7: Opening filter panel
-Step 8: Selecting "New Product" filter
-Step 9: Applying the filter
-Test completed successfully.
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Live_sanity/6_Swoopos_Listing.spec.js" timestamp="2025-06-12T05:03:00.265Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.863" errors="0">
-<testcase name="Swoopos Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/6_Swoopos_Listing.spec.js" time="25.863">
-<system-out>
-<![CDATA[Step 1: Logging in...
-Using login URL: https://erp.poundshop.com/login
-Username: Hitesh
-Step 1: Login successful.
-Step 2: Navigating to Inventory +
-Step 3: Navigating to Swoopos Listing
-Step 4: Clicking on "To Be Listed" tab
-Step 5: Clicking on "In Progress" tab
-Step 6: Clicking on "Already Listed" tab
-Test completed successfully.
+Login successful.
+Step 2: Clicking on Buying +...
+Step 3: Navigating to MROS Summary Report...
+Step 4: Focusing on search input...
+Step 5: Entering Supplier SKU - YTC178818...
+Step 6: Triggering search...
+Step 7: Re-confirming input and triggering search again...
+Step 8: Clicking refresh icon...
+MROS Summary Report test completed.
 ]]>
 </system-out>
 </testcase>

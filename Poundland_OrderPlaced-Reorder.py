@@ -71,7 +71,7 @@ try:
     #     print("Recite popup not found.")
 
     # Step 7: Reorder Process
-    for i in range(15):  # Loop for multiple items if needed
+    for i in range(5):  # Loop for multiple items if needed
         try:
             # Navigate to "My Orders"
             WebDriverWait(driver, 20).until(
