@@ -59,22 +59,18 @@ try:
         EC.element_to_be_clickable((By.ID, "next"))
     ).click()
 
-    # Step 6: Handle Recite Icon Popup
-    # try:
-    #     WebDriverWait(driver, 10).until(
-    #         EC.element_to_be_clickable((By.XPATH, "//button[@id='recite-close']"))
-    #     ).click()
-    #     WebDriverWait(driver, 10).until(
-    #         EC.element_to_be_clickable((By.XPATH, "//a[@id='recite-modal-button-ok']"))
-    #     ).click()
-    # except TimeoutException:
-    #     print("Recite popup not found.")
-
     # Step 7: Reorder Process
     for i in range(5):  # Loop for multiple items if needed
         try:
             # Navigate to "My Orders"
-            WebDriverWait(driver, 20).until(
+            # Wait for the navigation bar to be present before clicking "My Orders"
+            time.sleep(5)  # Wait for the page to load completely
+            print("Navigating to My Orders...")
+            # Click on the top navigation link
+            # Wait for the top navigation link to be clickable
+            print("Waiting for the top navigation link to be clickable...")
+            # Wait for the top navigation link to be clickable
+            WebDriverWait(driver, 30).until(
                 EC.element_to_be_clickable((By.XPATH, "//a[@class='top-nav__link']"))
             ).click()
 
@@ -105,9 +101,9 @@ try:
                 # Select the first delivery option (UK Standard Delivery)
                 standard_delivery_option = WebDriverWait(driver, 30).until(
                     # Select UK Standard Delivery
-                    EC.element_to_be_clickable((By.XPATH, "//input[@id='s_method_amstrates_amstrates74']")) 
+                    #EC.element_to_be_clickable((By.XPATH, "//input[@id='s_method_amstrates_amstrates74']")) 
                     # Select UK Next Day Delivery
-                    #EC.element_to_be_clickable((By.XPATH, "//input[@id='s_method_amstrates_amstrates77']"))
+                    EC.element_to_be_clickable((By.XPATH, "//input[@id='s_method_amstrates_amstrates77']"))
                 )
                 standard_delivery_option.click()
                 print("UK Standard Delivery option selected.")

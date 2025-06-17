@@ -1,15 +1,13 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="24.555827999999998">
-<testsuite name="Live_sanity/15_Import_PO.spec.js" timestamp="2025-06-13T07:17:37.915Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.997" errors="0">
-<testcase name="Import PO Flow" classname="Live_sanity/15_Import_PO.spec.js" time="22.997">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.304292999999998">
+<testsuite name="Live_sanity/7_Core_Range.spec.js" timestamp="2025-06-17T05:30:53.596Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.629" errors="0">
+<testcase name="Core range" classname="Live_sanity/7_Core_Range.spec.js" time="17.629">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
-✅ Login successful.
-Step 3: Clicking on Import PO...
-Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...
-Step 5: Clicking Cancel button...
-Import PO test completed.
+Step 1: Login successful.
+Step 2: Navigating to Buying + section...
+Step 3: Navigating to Core Range...
 ]]>
 </system-out>
 </testcase>
