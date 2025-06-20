@@ -60,7 +60,7 @@ try:
     ).click()
 
     # Step 7: Reorder Process
-    for i in range(5):  # Loop for multiple items if needed
+    for i in range(10):  # Loop for multiple items if needed
         try:
             # Navigate to "My Orders"
             # Wait for the navigation bar to be present before clicking "My Orders"
@@ -68,9 +68,10 @@ try:
             print("Navigating to My Orders...")
             # Click on the top navigation link
             # Wait for the top navigation link to be clickable
+            time.sleep(5)
             print("Waiting for the top navigation link to be clickable...")
             # Wait for the top navigation link to be clickable
-            WebDriverWait(driver, 30).until(
+            WebDriverWait(driver, 40).until(
                 EC.element_to_be_clickable((By.XPATH, "//a[@class='top-nav__link']"))
             ).click()
 

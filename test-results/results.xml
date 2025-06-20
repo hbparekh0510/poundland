@@ -1,13 +1,14 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="19.304292999999998">
-<testsuite name="Live_sanity/7_Core_Range.spec.js" timestamp="2025-06-17T05:30:53.596Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.629" errors="0">
-<testcase name="Core range" classname="Live_sanity/7_Core_Range.spec.js" time="17.629">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="41.76738699999999">
+<testsuite name="Live_sanity/21_Location_Assignment_Logs.spec.js" timestamp="2025-06-20T06:55:44.554Z" hostname="chromium" tests="1" failures="0" skipped="0" time="40.175" errors="0">
+<testcase name="Location Assignment Logs" classname="Live_sanity/21_Location_Assignment_Logs.spec.js" time="40.175">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
-Step 1: Login successful.
-Step 2: Navigating to Buying + section...
-Step 3: Navigating to Core Range...
+Login successful.
+Step 2: Navigating to Location Assignment Logs...
+Step 3: Opening logs for specific locations...
+Location Assignment Logs flow completed.
 ]]>
 </system-out>
 </testcase>
