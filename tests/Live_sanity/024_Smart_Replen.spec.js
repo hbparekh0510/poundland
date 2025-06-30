@@ -12,12 +12,12 @@ test('Replen', async ({ page }, testInfo) => {
 
   // Step 2: Click on Storage +
   console.log('Step 2: Clicking on Storage +...');
-  await page.getByRole('link', { name: ' Storage +' }).click();
+  await page.getByRole('link', { name: 'Storage +' }).click();
   await page.waitForTimeout(1000); // Wait after menu expand
 
   // Step 3: Click on Smart Replen
   console.log('Step 3: Clicking on Smart Replen...');
-  await page.getByRole('link', { name: ' Smart Replen' }).click();
+  await page.getByRole('link', { name: 'Smart Replen' }).click();
   await page.waitForTimeout(1000); // Wait after Smart Replen click
 
   // Step 4: Click on Order Replen
@@ -32,7 +32,7 @@ test('Replen', async ({ page }, testInfo) => {
 
   // Step 6: Open Filter (1)
   console.log('Step 6: Opening Filter (1)...');
-  await page.getByRole('button', { name: ' Filter (1) ' }).click();
+  await page.getByRole('button', { name: 'Filter (1)' }).click();
   await page.waitForTimeout(1000); // Wait after filter open
 
   // Step 7: Apply filter
@@ -42,7 +42,7 @@ test('Replen', async ({ page }, testInfo) => {
 
   // Step 8: Open Filter again
   console.log('Step 8: Reopening Filter (1)...');
-  await page.getByRole('button', { name: ' Filter (1) ' }).click();
+  await page.getByRole('button', { name: 'Filter (1)' }).click();
   await page.waitForTimeout(1000); // Wait after filter reopen
 
   // Step 9: Cancel filter
