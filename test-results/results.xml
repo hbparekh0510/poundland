@@ -1,18 +1,53 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="21.743585">
-<testsuite name="Live_sanity/026_Move_Product.spec.js" timestamp="2025-06-30T11:49:56.080Z" hostname="chromium" tests="1" failures="0" skipped="0" time="20.251" errors="0">
-<testcase name="Move Product" classname="Live_sanity/026_Move_Product.spec.js" time="20.251">
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="84.617446">
+<testsuite name="Live_sanity/003_New_Dashboard.spec.js" timestamp="2025-06-30T12:06:28.384Z" hostname="chromium" tests="1" failures="1" skipped="0" time="82.972" errors="0">
+<testcase name="New Dashboard Page &amp; TV Dashboard" classname="Live_sanity/003_New_Dashboard.spec.js" time="82.972">
+<failure message="003_New_Dashboard.spec.js:18:5 New Dashboard Page &amp; TV Dashboard" type="FAILURE">
+<![CDATA[  [chromium] › Live_sanity/003_New_Dashboard.spec.js:18:5 › New Dashboard Page & TV Dashboard ──────
+
+    Error: page.waitForLoadState: Target page, context or browser has been closed
+
+       at utils/loadTracker.js:7
+
+       5 |   const start = Date.now();
+       6 |   await action();
+    >  7 |   await page.waitForLoadState('networkidle');
+         |              ^
+       8 |   const duration = Date.now() - start;
+       9 |   console.log(`⏱️ ${stepName}: ${duration} ms`);
+      10 |   timings.push({ stepName, duration });
+        at track (/home/tops/Hitesh/Automation/Poundshop/tests/utils/loadTracker.js:7:14)
+        at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/003_New_Dashboard.spec.js:79:3
+
+    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video-1.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[Step 1: Logging in...
-Using login URL: https://erp.poundshop.com/login
+<![CDATA[Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
-Login successful.
-Step 2: Navigating to Move Products...
-Step 3: Entering location barcode...
-Location DP01 entered.
-Step 4: Selecting location DP01...
-Step 5: Confirming location...
-Step 6: Cancelling the movement...
-Move Product test completed.
+⏱️ Login: 9696 ms
+⏱️ Go to New Dashboard: 3162 ms
+⏱️ Open Filters: 114 ms
+⏱️ Open Shift Date Picker: 68 ms
+⏳ Selecting previous date manually (not tracked separately)
+Selecting previous day: Sun Jun 29 2025
+⏱️ Apply Filters: 81 ms
+⏱️ Navigate to Picking: 4406 ms
+⏱️ Navigate to Packing: 2888 ms
+⏱️ Navigate to Put Away: 2649 ms
+⏱️ Navigate to Replen: 2676 ms
+⏱️ Navigate to Goods In via More: 2709 ms
+⏱️ Navigate to Forecast via More: 7376 ms
+⏱️ Open TV Dashboard: 2621 ms
+
+[[ATTACHMENT|Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video-1.webm]]
+
+[[ATTACHMENT|Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video.webm]]
 ]]>
 </system-out>
 </testcase>
