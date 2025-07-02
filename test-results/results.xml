@@ -1,53 +1,54 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="84.617446">
-<testsuite name="Live_sanity/003_New_Dashboard.spec.js" timestamp="2025-06-30T12:06:28.384Z" hostname="chromium" tests="1" failures="1" skipped="0" time="82.972" errors="0">
-<testcase name="New Dashboard Page &amp; TV Dashboard" classname="Live_sanity/003_New_Dashboard.spec.js" time="82.972">
-<failure message="003_New_Dashboard.spec.js:18:5 New Dashboard Page &amp; TV Dashboard" type="FAILURE">
-<![CDATA[  [chromium] › Live_sanity/003_New_Dashboard.spec.js:18:5 › New Dashboard Page & TV Dashboard ──────
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="59.822337999999995">
+<testsuite name="Live_sanity/028_Pick.spec.js" timestamp="2025-07-02T09:17:52.602Z" hostname="chromium" tests="1" failures="1" skipped="0" time="58.31" errors="0">
+<testcase name="Picking - Smart Pick, Personalized and Order Pick List" classname="Live_sanity/028_Pick.spec.js" time="58.31">
+<failure message="028_Pick.spec.js:5:5 Picking - Smart Pick, Personalized and Order Pick List" type="FAILURE">
+<![CDATA[  [chromium] › Live_sanity/028_Pick.spec.js:5:5 › Picking - Smart Pick, Personalized and Order Pick List 
 
-    Error: page.waitForLoadState: Target page, context or browser has been closed
+    Error: locator.click: Target page, context or browser has been closed
+    Call log:
+      - waiting for getByRole('link', { name: 'More' })
 
-       at utils/loadTracker.js:7
 
-       5 |   const start = Date.now();
-       6 |   await action();
-    >  7 |   await page.waitForLoadState('networkidle');
-         |              ^
-       8 |   const duration = Date.now() - start;
-       9 |   console.log(`⏱️ ${stepName}: ${duration} ms`);
-      10 |   timings.push({ stepName, duration });
-        at track (/home/tops/Hitesh/Automation/Poundshop/tests/utils/loadTracker.js:7:14)
-        at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/003_New_Dashboard.spec.js:79:3
+      79 |   // Step 12: Open More menu
+      80 |   console.log('Step 12: Clicking on More...');
+    > 81 |   await page.getByRole('link', { name: 'More' }).click();
+         |                                                  ^
+      82 |   await page.waitForTimeout(1000);
+      83 |
+      84 |   // Step 13: Apply Pick List filters
+        at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/028_Pick.spec.js:81:50
 
     attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video-1.webm
+    test-results/Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
+    Error Context: ../test-results/Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/error-context.md
 ]]>
 </failure>
 <system-out>
-<![CDATA[Using login URL: https://erp.poundshop.com/login
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
 Username: Hitesh
-⏱️ Login: 9696 ms
-⏱️ Go to New Dashboard: 3162 ms
-⏱️ Open Filters: 114 ms
-⏱️ Open Shift Date Picker: 68 ms
-⏳ Selecting previous date manually (not tracked separately)
-Selecting previous day: Sun Jun 29 2025
-⏱️ Apply Filters: 81 ms
-⏱️ Navigate to Picking: 4406 ms
-⏱️ Navigate to Packing: 2888 ms
-⏱️ Navigate to Put Away: 2649 ms
-⏱️ Navigate to Replen: 2676 ms
-⏱️ Navigate to Goods In via More: 2709 ms
-⏱️ Navigate to Forecast via More: 7376 ms
-⏱️ Open TV Dashboard: 2621 ms
+Login successful.
+Step 2: Navigating to Order Processing...
+Clicked on "Order Processing -"
+Clicked on "Order Processing +"
+Clicking on PICK menu...
+Clicked on "PICK"
+Step 3: Opening Settings and Canceling...
+Step 4: Navigating to Personalized Smart Pick...
+Step 5: Selecting Smart Pick Origin...
+Step 6: Filtering by Reference...
+Step 7: Clicking Filter (1)...
+Step 8: Selecting a User...
+Step 9: Applying filter...
+Step 10: Reopening filter and resetting...
+Step 11: Triggering keyboard shortcut (Ctrl/Cmd + O)...
+Step 12: Clicking on More...
 
-[[ATTACHMENT|Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video-1.webm]]
+[[ATTACHMENT|Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/video.webm]]
 
-[[ATTACHMENT|Live_sanity-003_New_Dashbo-4f85c-Dashboard-Page-TV-Dashboard-chromium/video.webm]]
+[[ATTACHMENT|Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/error-context.md]]
 ]]>
 </system-out>
 </testcase>
