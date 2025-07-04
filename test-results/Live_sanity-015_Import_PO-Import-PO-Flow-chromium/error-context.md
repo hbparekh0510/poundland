@@ -1,0 +1,784 @@
+# Test info
+
+- Name: Import PO Flow
+- Location: /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/015_Import_PO.spec.js:5:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 100000ms exceeded.
+Call log:
+  - waiting for getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first()
+
+    at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/015_Import_PO.spec.js:21:95
+```
+
+# Page snapshot
+
+```yaml
+- button
+- link:
+  - /url: javascript:void(0)
+- list:
+  - listitem:
+    - link " Dashboard":
+      - /url: https://erp.poundshop.com/mros-dashboard
+  - listitem:
+    - link " New Dashboard":
+      - /url: https://erp.poundshop.com/main-dashboard
+  - listitem:
+    - link " Sku Dashboard":
+      - /url: https://erp.poundshop.com/sku-dashboard
+  - listitem:
+    - link " Inventory +":
+      - /url: javascript:void(0)
+      - text:  Inventory
+      - button "+"
+    - list:
+      - listitem:
+        - link " Stock Inventory":
+          - /url: https://erp.poundshop.com/product
+      - listitem:
+        - link " Poundland Listing":
+          - /url: https://erp.poundshop.com/listing-manager/magento
+      - listitem:
+        - link "Swoopos Listing":
+          - /url: https://erp.poundshop.com/listing-manager/swoopos/already-listed
+  - listitem:
+    - link " Buying +":
+      - /url: javascript:void(0)
+      - text:  Buying
+      - button "+"
+    - list:
+      - listitem:
+        - link " Core Range":
+          - /url: https://erp.poundshop.com/range-budget
+      - listitem:
+        - link " Buy by Product":
+          - /url: https://erp.poundshop.com/buy-by-product
+      - listitem:
+        - link " Buy by Range":
+          - /url: https://erp.poundshop.com/buy-by-range
+      - listitem:
+        - link " MROS Report":
+          - /url: https://erp.poundshop.com/mros-report
+      - listitem:
+        - link " MROS Summary Report":
+          - /url: https://erp.poundshop.com/mros-summary-report
+  - listitem:
+    - link "Repeat Buying Repeat Buying":
+      - /url: https://erp.poundshop.com/repeat-buying
+      - img "Repeat Buying"
+      - text: Repeat Buying
+  - listitem:
+    - link " Suppliers":
+      - /url: https://erp.poundshop.com/supplier
+  - listitem:
+    - link " Purchase Order":
+      - /url: https://erp.poundshop.com/purchase-orders
+  - listitem:
+    - link " Import PO":
+      - /url: https://erp.poundshop.com/auto-po
+  - listitem:
+    - link " Goods In +":
+      - /url: javascript:void(0)
+      - text:  Goods In
+      - button "+"
+    - list:
+      - listitem:
+        - link " Booking In":
+          - /url: https://erp.poundshop.com/booking-in
+      - listitem "Import Booking":
+        - link " Import Booking":
+          - /url: https://erp.poundshop.com/import-booking
+      - listitem:
+        - link " Booking In Report":
+          - /url: https://erp.poundshop.com/booking-in/booking-in-report
+  - listitem:
+    - link " Storage +":
+      - /url: javascript:void(0)
+      - text:  Storage
+      - button "+"
+    - list:
+      - listitem:
+        - link " Put Away":
+          - /url: https://erp.poundshop.com/put-away
+      - listitem:
+        - link " Pick Location Assignments":
+          - /url: https://erp.poundshop.com/location-assign
+      - listitem:
+        - link "Location Assignment Logs":
+          - /url: https://erp.poundshop.com/location-assign-logs
+      - listitem:
+        - link " Replen Request":
+          - /url: https://erp.poundshop.com/replen-request
+      - listitem:
+        - link " Replen":
+          - /url: https://erp.poundshop.com/replen
+      - listitem:
+        - link " Smart Replen":
+          - /url: https://erp.poundshop.com/smart-replen
+  - listitem:
+    - link " Stock Control +":
+      - /url: javascript:void(0)
+      - text:  Stock Control
+      - button "+"
+    - list:
+      - listitem:
+        - link " Stock Check":
+          - /url: https://erp.poundshop.com/stock-control/stock-check
+      - listitem:
+        - link " Move Products":
+          - /url: https://erp.poundshop.com/move-product
+  - listitem:
+    - link " Order Processing +":
+      - /url: javascript:void(0)
+      - text:  Order Processing
+      - button "+"
+    - list:
+      - listitem:
+        - link " Orders List":
+          - /url: https://erp.poundshop.com/orders
+      - listitem:
+        - link " Pick":
+          - /url: https://erp.poundshop.com/pick-lists-smart
+      - listitem:
+        - link " Checkout":
+          - /url: https://erp.poundshop.com/checkout
+      - listitem:
+        - link " Despatch Create":
+          - /url: https://erp.poundshop.com/despatch-create-package
+      - listitem:
+        - link " Despatch Listing":
+          - /url: https://erp.poundshop.com/despatch
+      - listitem:
+        - link " Packaging Admin":
+          - /url: https://erp.poundshop.com/packing/create-package
+      - listitem:
+        - link " Packing":
+          - /url: https://erp.poundshop.com/packer/create-packing
+      - listitem:
+        - link " Reverse Pick":
+          - /url: https://erp.poundshop.com/reverse-pick
+      - listitem:
+        - link " Spot Check Orders":
+          - /url: https://erp.poundshop.com/spot-check-order
+      - listitem:
+        - link "Refund Reasons Refund Reasons":
+          - /url: https://erp.poundshop.com/refund-reason
+          - text: Refund Reasons
+      - listitem:
+        - link "Returns & Refunds":
+          - /url: https://erp.poundshop.com/rma
+      - listitem:
+        - link " Failed Order List":
+          - /url: https://erp.poundshop.com/failed-orders
+      - listitem:
+        - link " Reverse Over Pick":
+          - /url: https://erp.poundshop.com/reverse-over-pick
+  - listitem:
+    - link " Carrier Manifest":
+      - /url: https://erp.poundshop.com/carrier-manifest
+  - listitem:
+    - link " Customer":
+      - /url: https://erp.poundshop.com/customers
+  - listitem:
+    - link " Reports +":
+      - /url: javascript:void(0)
+      - text:  Reports
+      - button "+"
+    - list:
+      - listitem:
+        - link " Tax Payment on Purchase Order":
+          - /url: https://erp.poundshop.com/tax-payment-report-po
+      - listitem:
+        - link " Excess Quantity Received":
+          - /url: https://erp.poundshop.com/excess-qty-received-report
+      - listitem:
+        - link " Best Before Date":
+          - /url: https://erp.poundshop.com/bestbeforedate-report
+      - listitem:
+        - link " Stock Valuation":
+          - /url: https://erp.poundshop.com/stock-valuation-product-report
+      - listitem:
+        - link " Stock Valuation Location":
+          - /url: https://erp.poundshop.com/stock-valuation-location-report
+      - listitem:
+        - link " Sales Report (UK)":
+          - /url: https://erp.poundshop.com/sales-report
+      - listitem:
+        - link " Sales Report By SKU (UK)":
+          - /url: https://erp.poundshop.com/sales-report-by-sku
+      - listitem:
+        - link " Goods Received by Supplier":
+          - /url: https://erp.poundshop.com/goods-in-received-report-by-supplier
+      - listitem "Goods Received Report by SKU":
+        - link " Goods Received Report by SKU":
+          - /url: https://erp.poundshop.com/goods-in-received-report-by-sku
+      - listitem "Refund Report":
+        - link " Refund Report":
+          - /url: https://erp.poundshop.com/refund-report
+      - listitem "Putaway Quantity":
+        - link " Putaway Quantity":
+          - /url: https://erp.poundshop.com/putaway-qty-report
+      - listitem "Pick Quantity":
+        - link " Pick Quantity":
+          - /url: https://erp.poundshop.com/pick-qty-report
+      - listitem "Aisle Wise Box Qty Report":
+        - link " Aisle Wise Box Qty Report":
+          - /url: https://erp.poundshop.com/aisle-box-qty-report
+      - listitem "Warehouse Report":
+        - link " Warehouse Report":
+          - /url: https://erp.poundshop.com/warehouse-report
+      - listitem "PO Mismatch Price Report":
+        - link " PO Mismatch Price Report":
+          - /url: https://erp.poundshop.com/po-mismatch-price-report
+      - listitem "Loss Sales Report":
+        - link " Loss Sales Report":
+          - /url: https://erp.poundshop.com/loss-sales-report
+      - listitem "Order Box Report":
+        - link " Order Box Report":
+          - /url: https://erp.poundshop.com/order-boxes-report
+      - listitem "X Days Report":
+        - link " X Days Report":
+          - /url: https://erp.poundshop.com/x-sales-report
+      - listitem "Real Quantity Report":
+        - link " Real Quantity Report":
+          - /url: https://erp.poundshop.com/real-quantity-report
+      - listitem "RMA Damaged Quantity Report":
+        - link " RMA Damaged Quantity Report":
+          - /url: https://erp.poundshop.com/rma-damaged-quantity-report
+      - listitem "ROS Report":
+        - link " ROS Report":
+          - /url: https://erp.poundshop.com/ros-report
+      - listitem "Sales Summary Report":
+        - link " Sales Summary Report":
+          - /url: https://erp.poundshop.com/weekly-sales-summary
+      - listitem "Availability Report":
+        - link " Availability Report":
+          - /url: https://erp.poundshop.com/availability-report
+      - listitem "Sales and Purchases Insights":
+        - link " Sales and Purchases Insights":
+          - /url: https://erp.poundshop.com/sales-and-purchases-insights-report
+      - listitem "Margin Report":
+        - link " Margin Report":
+          - /url: https://erp.poundshop.com/margin-report
+      - listitem "Staff Report":
+        - link " Staff Report":
+          - /url: https://erp.poundshop.com/staff-report
+      - listitem "Out of Stock Report":
+        - link " Out of Stock Report":
+          - /url: https://erp.poundshop.com/out-of-stock-report?active_tab=weekly
+      - listitem:
+        - link " Weekly Sales Report by Sku":
+          - /url: https://erp.poundshop.com/weekly-sales-report-by-sku
+      - listitem:
+        - link " Reason Refund Report":
+          - /url: https://erp.poundshop.com/reason-refund-report
+      - listitem:
+        - link " SKU Wise Refund Report":
+          - /url: https://erp.poundshop.com/sku-wise-refund-report
+  - listitem:
+    - link "Import Export Import Export +":
+      - /url: javascript:void(0)
+      - text: Import Export
+      - button "+"
+    - list:
+      - listitem:
+        - link "Poundland Inventory Export Poundland Inventory Export":
+          - /url: https://erp.poundshop.com/export/poundland-inventory
+          - text: Poundland Inventory Export
+      - listitem:
+        - link "Product List Export Product List Export":
+          - /url: https://erp.poundshop.com/export/product-list
+          - text: Product List Export
+      - listitem:
+        - link "Brandbank Import Brandbank Import":
+          - /url: https://erp.poundshop.com/brandbank-import
+          - text: Brandbank Import
+      - listitem:
+        - link "Price Import Price Import":
+          - /url: https://erp.poundshop.com/price-import
+          - text: Price Import
+      - listitem:
+        - link "30 Days Sku Order Qty with Warehouse Available Qtys 30 Days Sku Order Qty":
+          - /url: https://erp.poundshop.com/export/csv-export
+          - text: 30 Days Sku Order Qty
+      - listitem:
+        - link "Product Data Import Product Data Import":
+          - /url: https://erp.poundshop.com/product-data-import
+          - text: Product Data Import
+  - listitem:
+    - link "Invoice Matching Invoice Matching":
+      - /url: https://erp.poundshop.com/invoice_material_receipt
+      - text: Invoice Matching
+  - listitem:
+    - link " Warehouse Settings +":
+      - /url: javascript:void(0)
+      - text:  Warehouse Settings
+      - button "+"
+    - list:
+      - listitem:
+        - link " Box Master":
+          - /url: https://erp.poundshop.com/cartons
+      - listitem:
+        - link " Locations":
+          - /url: https://erp.poundshop.com/locations
+      - listitem:
+        - link "Locations Sequence Locations Sequence":
+          - /url: https://erp.poundshop.com/locationsseq
+          - text: Locations Sequence
+      - listitem:
+        - link " Pallets Management":
+          - /url: https://erp.poundshop.com/pallets
+      - listitem:
+        - link " Slot Master":
+          - /url: https://erp.poundshop.com/slot
+      - listitem:
+        - link " Totes Management":
+          - /url: https://erp.poundshop.com/totes
+      - listitem:
+        - link " Stock Reasons":
+          - /url: https://erp.poundshop.com/stock-reasons
+      - listitem:
+        - link "Target Calculation Target Calculation":
+          - /url: https://erp.poundshop.com/target-calculation
+          - img "Target Calculation"
+          - text: Target Calculation
+  - listitem:
+    - link " Buying Settings +":
+      - /url: javascript:void(0)
+      - text:  Buying Settings
+      - button "+"
+    - list:
+      - listitem:
+        - link " Category Mapping":
+          - /url: https://erp.poundshop.com/category-mapping
+      - listitem:
+        - link "Swoopos Category Mapping Swoopos Category Mapping":
+          - /url: https://erp.poundshop.com/swoopos-category-mapping
+          - text: Swoopos Category Mapping
+      - listitem:
+        - link " Commodity Code":
+          - /url: https://erp.poundshop.com/commodity-codes
+      - listitem:
+        - link " Restricted Commodity Code":
+          - /url: https://erp.poundshop.com/restricted-commodity-codes
+      - listitem:
+        - link " Import Duty Master":
+          - /url: https://erp.poundshop.com/import-duty
+      - listitem:
+        - link " QC Checklist":
+          - /url: https://erp.poundshop.com/qc-checklist
+      - listitem:
+        - link "Range Management Range Management":
+          - /url: https://erp.poundshop.com/range
+          - text: Range Management
+      - listitem:
+        - link " Swoopos Category":
+          - /url: https://erp.poundshop.com/swoopos_categories
+      - listitem:
+        - link " VAT Rates":
+          - /url: https://erp.poundshop.com/settings/vat_rates
+      - listitem:
+        - link "Purchase Order Setting Purchase Order Setting":
+          - /url: https://erp.poundshop.com/settings/buyer_po_setting
+          - text: Purchase Order Setting
+  - listitem:
+    - link " Supplier Settings +":
+      - /url: javascript:void(0)
+      - text:  Supplier Settings
+      - button "+"
+    - list:
+      - listitem:
+        - link " Terms and Conditions":
+          - /url: https://erp.poundshop.com/supplier-setting/terms
+      - listitem:
+        - link " References":
+          - /url: https://erp.poundshop.com/reference
+  - listitem:
+    - link " System Settings +":
+      - /url: javascript:void(0)
+      - text:  System Settings
+      - button "+"
+    - list:
+      - listitem:
+        - link " General Settings":
+          - /url: https://erp.poundshop.com/settings/general
+      - listitem:
+        - link " Warehouse Wise Settings":
+          - /url: https://erp.poundshop.com/settings/warehouse-wise
+      - listitem:
+        - link " Company Settings":
+          - /url: https://erp.poundshop.com/settings/company
+      - listitem:
+        - link "MROS Setting MROS Setting":
+          - /url: https://erp.poundshop.com/mros-setting
+          - text: MROS Setting
+      - listitem:
+        - link "Allocation Logic Configuration Allocation Logic Configuration":
+          - /url: https://erp.poundshop.com/allocation-logic-configuration
+          - text: Allocation Logic Configuration
+      - listitem:
+        - link " Site Management":
+          - /url: https://erp.poundshop.com/warehouse
+      - listitem:
+        - link " Supplier Warehouse":
+          - /url: https://erp.poundshop.com/supplier-warehouse
+      - listitem:
+        - link " Shift Master":
+          - /url: https://erp.poundshop.com/shift-master
+      - listitem:
+        - link "Store Management Store Management":
+          - /url: https://erp.poundshop.com/store
+          - text: Store Management
+      - listitem:
+        - link " Warehouse Switch Scheduler":
+          - /url: https://erp.poundshop.com/scheduler
+      - listitem:
+        - link " User Management":
+          - /url: https://erp.poundshop.com/users
+      - listitem:
+        - link " User Roles":
+          - /url: https://erp.poundshop.com/roles
+      - listitem:
+        - link "Brands Brands":
+          - /url: https://erp.poundshop.com/brands
+          - text: Brands
+      - listitem:
+        - link "Shipping Rule Configuration Shipping Rule Configuration":
+          - /url: https://erp.poundshop.com/carrier-company
+          - text: Shipping Rule Configuration
+      - listitem:
+        - link "Shipping Method Configuration Shipping Method Configuration":
+          - /url: https://erp.poundshop.com/shipping-method
+          - text: Shipping Method Configuration
+      - listitem:
+        - link "Magento Shipping Options Magento Shipping Options":
+          - /url: https://erp.poundshop.com/magento-shipping
+          - text: Magento Shipping Options
+      - listitem:
+        - link " Print Barcode":
+          - /url: https://erp.poundshop.com/print-barcode
+      - listitem:
+        - link " Slack Notification Management":
+          - /url: https://erp.poundshop.com/channels
+      - listitem:
+        - link "Additional Inputs":
+          - /url: https://erp.poundshop.com/dynamic-form
+  - listitem:
+    - link " Offline Failed Action":
+      - /url: https://erp.poundshop.com/offline_error_log
+  - listitem:
+    - link " Poundland Logs +":
+      - /url: javascript:void(0)
+      - text:  Poundland Logs
+      - button "+"
+    - list:
+      - listitem:
+        - link " Third Party Api Logs":
+          - /url: https://erp.poundshop.com/third-party-api-logs
+      - listitem:
+        - link " Reverse Pick Job Logs":
+          - /url: https://erp.poundshop.com/reverse-pick-job-logs
+      - listitem:
+        - link " Import Logs":
+          - /url: https://erp.poundshop.com/import-logs
+      - listitem:
+        - link " Export Logs":
+          - /url: https://erp.poundshop.com/export-logs
+      - listitem:
+        - link " Data Processing Logs":
+          - /url: https://erp.poundshop.com/data-processing-logs
+      - listitem:
+        - link " Vitesse Logs":
+          - /url: https://erp.poundshop.com/vitesse-logs
+      - listitem:
+        - link " Mobile Api Logs":
+          - /url: https://erp.poundshop.com/mobile-api-logs
+  - listitem:
+    - link " Cron Master":
+      - /url: https://erp.poundshop.com/cron-master
+  - listitem:
+    - link " User Manual":
+      - /url: https://erp.poundshop.com/manual
+- list:
+  - listitem:
+    - text: Hitesh
+    - button "angle":
+      - img "angle"
+  - listitem:
+    - text: 
+    - link "Profile & Settings":
+      - /url: https://erp.poundshop.com/users/959
+  - listitem:
+    - text: 
+    - link "Logout":
+      - /url: https://erp.poundshop.com/logout
+- heading "Import PO" [level=3]
+- link "":
+  - /url: https://erp.poundshop.com/settings-auto-po
+- link "":
+  - /url: https://erp.poundshop.com/auto-po/create
+- grid:
+  - rowgroup:
+    - 'row "ID: activate to sort column ascending Created by: activate to sort column ascending Status: activate to sort column ascending PO Count: activate to sort column ascending Sell Out Date: activate to sort column ascending Created on: activate to sort column ascending Action"':
+      - 'gridcell "ID: activate to sort column ascending"': ID
+      - 'gridcell "Created by: activate to sort column ascending"': Created by
+      - 'gridcell "Status: activate to sort column ascending"': Status
+      - 'gridcell "PO Count: activate to sort column ascending"': PO Count
+      - 'gridcell "Sell Out Date: activate to sort column ascending"': Sell Out Date
+      - 'gridcell "Created on: activate to sort column ascending"': Created on
+      - gridcell "Action"
+- grid:
+  - rowgroup:
+    - 'row "ID: activate to sort column ascending Created by: activate to sort column ascending Status: activate to sort column ascending PO Count: activate to sort column ascending Sell Out Date: activate to sort column ascending Created on: activate to sort column ascending Action"':
+      - 'gridcell "ID: activate to sort column ascending"': ID
+      - 'gridcell "Created by: activate to sort column ascending"': Created by
+      - 'gridcell "Status: activate to sort column ascending"': Status
+      - 'gridcell "PO Count: activate to sort column ascending"': PO Count
+      - 'gridcell "Sell Out Date: activate to sort column ascending"': Sell Out Date
+      - 'gridcell "Created on: activate to sort column ascending"': Created on
+      - gridcell "Action"
+  - rowgroup:
+    - row "939 Nicky Taylor Process Completed 1 - 01-Jul-2025 08:23 AM   ":
+      - gridcell "939"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "01-Jul-2025 08:23 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/939/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "936 Nicky Taylor Process Completed 1 - 30-Jun-2025 08:35 AM   ":
+      - gridcell "936"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "30-Jun-2025 08:35 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/936/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "935 Nicky Taylor Process Completed 1 - 27-Jun-2025 08:40 AM   ":
+      - gridcell "935"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "27-Jun-2025 08:40 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/935/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "927 Nicky Taylor Process Completed 1 - 24-Jun-2025 08:38 AM   ":
+      - gridcell "927"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "24-Jun-2025 08:38 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/927/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "923 Nicky Taylor Process Completed 1 - 23-Jun-2025 08:25 AM   ":
+      - gridcell "923"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "23-Jun-2025 08:25 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/923/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "920 Nicky Taylor Process Completed 1 - 20-Jun-2025 08:27 AM   ":
+      - gridcell "920"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "20-Jun-2025 08:27 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/920/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "917 Nicky Taylor Process Completed 1 - 19-Jun-2025 08:33 AM   ":
+      - gridcell "917"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "19-Jun-2025 08:33 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/917/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "912 Nicky Taylor Process Completed 1 - 17-Jun-2025 09:14 AM   ":
+      - gridcell "912"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "17-Jun-2025 09:14 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/912/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "909 Nicky Taylor Process Completed 1 - 16-Jun-2025 08:18 AM   ":
+      - gridcell "909"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "16-Jun-2025 08:18 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/909/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+    - row "908 Nicky Taylor Process Completed 1 - 13-Jun-2025 08:15 AM   ":
+      - gridcell "908"
+      - gridcell "Nicky Taylor"
+      - gridcell "Process Completed"
+      - gridcell "1":
+        - link "1":
+          - /url: "#"
+      - gridcell "-"
+      - gridcell "13-Jun-2025 08:15 AM"
+      - gridcell "  ":
+        - list:
+          - listitem:
+            - link "":
+              - /url: https://erp.poundshop.com/auto-po/908/edit
+          - listitem:
+            - link "":
+              - /url: "#"
+            - link "":
+              - /url: "#"
+- status: Showing 1 to 10 of 541 entries
+- text:  1 2 3 4 5 … 55  Show
+- combobox "Show entries":
+  - option "10" [selected]
+  - option "25"
+  - option "50"
+  - option "75"
+  - option "100"
+  - option "250"
+  - option "500"
+  - option "750"
+  - option "1,000"
+- text: entries
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 | import path from 'path';
+   3 | import { login } from '../loginHelper.js'; // Adjust this path if needed
+   4 |
+   5 | test('Import PO Flow', async ({ page }, testInfo) => {
+   6 |   // Step 1: Login to the application
+   7 |   console.log('Step 1: Logging in...');
+   8 |   await login(page);
+   9 |   await page.waitForLoadState('networkidle');
+  10 |   await page.waitForTimeout(2000);
+  11 |   console.log('Login successful.');
+  12 |
+  13 |   // Step 3: Click on "Import PO" tab
+  14 |   console.log('Step 3: Clicking on Import PO...');
+  15 |   await page.getByRole('link', { name: 'Import PO' }).click();
+  16 |   await page.waitForLoadState('networkidle');
+  17 |   await page.waitForTimeout(2000);
+  18 |
+  19 |   // Step 4: Click on the specific PO row link
+  20 |   console.log('Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...');
+> 21 |   await page.getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first().click();
+     |                                                                                               ^ Error: locator.click: Test timeout of 100000ms exceeded.
+  22 |   await page.waitForLoadState('networkidle');
+  23 |   await page.waitForTimeout(2000);
+  24 |
+  25 |   // Step 5: Click Cancel button to exit
+  26 |   console.log('Step 5: Clicking Cancel button...');
+  27 |   await page.getByRole('button', { name: 'Cancel' }).click();
+  28 |   await page.waitForTimeout(2000);
+  29 |
+  30 |   console.log('Import PO test completed.');
+  31 | });
+```

@@ -1,30 +1,567 @@
-<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="59.822337999999995">
-<testsuite name="Live_sanity/028_Pick.spec.js" timestamp="2025-07-02T09:17:52.602Z" hostname="chromium" tests="1" failures="1" skipped="0" time="58.31" errors="0">
-<testcase name="Picking - Smart Pick, Personalized and Order Pick List" classname="Live_sanity/028_Pick.spec.js" time="58.31">
-<failure message="028_Pick.spec.js:5:5 Picking - Smart Pick, Personalized and Order Pick List" type="FAILURE">
-<![CDATA[  [chromium] › Live_sanity/028_Pick.spec.js:5:5 › Picking - Smart Pick, Personalized and Order Pick List 
+<testsuites id="" name="" tests="34" failures="1" skipped="0" errors="0" time="1229.4664790000002">
+<testsuite name="Live_sanity/001_login.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.179" errors="0">
+<testcase name="Login" classname="Live_sanity/001_login.spec.js" time="8.179">
+<system-out>
+<![CDATA[Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+✅ Checking if "PACKING" heading is visible...
+📸 Screenshot saved at: test-results/001_login-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/002_Dashboard.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="8.694" errors="0">
+<testcase name="Dashboard Page" classname="Live_sanity/002_Dashboard.spec.js" time="8.694">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Dashboard...
+Step 2: Dashboard link clicked.
+Step 3: Clicking on "MROS" main menu...
+Step 3: "MROS" menu clicked.
+Step 4: Clicking on "Sales" submenu...
+Step 4: "Sales" submenu clicked.
+Step 5: Clicking on "Stock" submenu...
+Step 5: "Stock" submenu clicked.
+Test completed successfully.
+📸 Screenshot saved at: test-results/002_Dashboard-success.png
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/003_New_Dashboard.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="34.532" errors="0">
+<testcase name="New Dashboard Page &amp; TV Dashboard" classname="Live_sanity/003_New_Dashboard.spec.js" time="34.532">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Navigating to New Dashboard
+Opening filter options
+Opening shift date selector
+Selecting previous day: Thu Jul 03 2025
+Applying selected filters
+Navigating to Picking
+Navigating to Packing
+Navigating to Put Away
+Navigating to Replen
+Opening More menu
+Navigating to Goods In
+Opening More menu again
+Navigating to Forecast
+Opening More menu for the third time
+Navigating to Tv Dashboard
+Waiting for new popup page after clicking Darton 1
+Clicking exact Order Well
+✅ Test Completed Successfully
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/004_Stock_Inventory.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="38.939" errors="0">
+<testcase name="Dashboard Page - Stock Inventory Search and Filter" classname="Live_sanity/004_Stock_Inventory.spec.js" time="38.939">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Navigating to Inventory +
+Navigating to Stock Inventory
+Clicking on search textbox
+Filling in SKU: 940883
+Pressing Enter to search
+Clearing the search filter
+Opening filter panel
+Clicking on "Show In Stock Products only" checkbox
+Applying the filter
+Clearing the filter
+Test execution completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/005_Poundland_Listing.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="32.106" errors="0">
+<testcase name="Poundland Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/005_Poundland_Listing.spec.js" time="32.106">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Inventory +
+Step 3: Navigating to Poundland Listing
+Step 4: Clicking on "To Be Listed" tab
+Step 5: Clicking on "In Progress" tab
+Step 6: Clicking on "Already Listed" tab
+Step 7: Opening filter panel
+Step 8: Selecting "New Product" filter
+Step 9: Applying the filter
+Test completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/006_Swoopos_Listing.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.612" errors="0">
+<testcase name="Swoopos Listing Screen: Already Listed, To be Listed, In Progress" classname="Live_sanity/006_Swoopos_Listing.spec.js" time="25.612">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Inventory +
+Step 3: Navigating to Swoopos Listing
+Step 4: Clicking on "To Be Listed" tab
+Step 5: Clicking on "In Progress" tab
+Step 6: Clicking on "Already Listed" tab
+Test completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/007_Core_Range.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.441" errors="0">
+<testcase name="Core range" classname="Live_sanity/007_Core_Range.spec.js" time="19.441">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Navigating to Buying + section...
+Step 3: Navigating to Core Range...
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/008_Buy-By_Product.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="31.275" errors="0">
+<testcase name="Buy by Product" classname="Live_sanity/008_Buy-By_Product.spec.js" time="31.275">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 6: Navigating to Buying + menu...
+Step 7: Opening Buy by Product...
+Step 8: Focusing barcode input field...
+Step 9: Entering barcode...
+Step 10: Pressing Enter to search barcode...
+Step 11: Switching to Sales tab...
+Step 12: Switching to Supplier tab...
+Step 13: Switching to P.O. tab...
+Test flow completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/009_Buy-By_Range.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="67.742" errors="0">
+<testcase name="Buy by Range" classname="Live_sanity/009_Buy-By_Range.spec.js" time="67.742">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Step 1: Login successful.
+Step 2: Clicking on Buying + menu...
+Step 3: Clicking on Buy by Range...
+Step 4: Selecting main category: 915...
+Step 5: Navigating to Stock tab with filter 915...
+Step 6: Switching to Sales tab...
+Step 7: Switching to Supplier tab...
+Step 8: Switching to P.O. tab...
+Step 9: Changing main category to 4...
+Step 10: Navigating to PO tab with filter 4...
+Step 11: Selecting child category: 109...
+Step 12: Navigating to PO tab with filters 4,109...
+Step 13: Selecting sub-category: 432...
+Step 14: Navigating to PO tab with filters 4,109,432...
+Step 15: Switching to Stock tab...
+Step 16: Switching to Sales tab...
+Step 17: Switching to Supplier tab...
+Step 18: Switching to P.O. tab...
+Buy by Range test flow completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/010_MROS_Report.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="32.153" errors="0">
+<testcase name="MROS Report" classname="Live_sanity/010_MROS_Report.spec.js" time="32.153">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Buying +...
+Step 3: Clicking on MROS Report...
+Step 4: Focusing Search by SKU...
+Step 5: Entering SKU - XMA137303...
+Step 6: Pressing Enter to search...
+MROS Report test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/011_MROS_Summary_Report.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="28.132" errors="0">
+<testcase name="MROS Summary Report" classname="Live_sanity/011_MROS_Summary_Report.spec.js" time="28.132">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Clicking on Buying +...
+Step 3: Navigating to MROS Summary Report...
+Step 4: Focusing on search input...
+Step 5: Entering Supplier SKU - YTC178818...
+Step 6: Triggering search...
+Step 7: Re-confirming input and triggering search again...
+Step 8: Clicking refresh icon...
+MROS Summary Report test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/012_Repeat_Buying.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.851" errors="0">
+<testcase name="Repeat Buying" classname="Live_sanity/012_Repeat_Buying.spec.js" time="25.851">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+✅ Login successful.
+Step 2: Navigating to Repeat Buying...
+Step 3: Clicking icon in first row...
+Step 4: Clicking icon in 7th row...
+Step 5: Clicking on search input...
+Step 6: Entering SKU 478701...
+Step 7: Pressing Enter to search...
+Repeat Buying test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/013_Supplier.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="66.762" errors="0">
+<testcase name="Suppliers" classname="Live_sanity/013_Supplier.spec.js" time="66.762">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Suppliers...
+Step 3: Searching for "Poundland"...
+Step 4: Selecting Poundland...
+Navigating to "Contact Info" tab...
+Navigating to "Payment Info" tab...
+Navigating to "Ratings" tab...
+Navigating to "Poundland Products" tab...
+Navigating to "Poundland Credentials" tab...
+Navigating to "Average Lead Time" tab...
+Navigating to "References" tab...
+Navigating to "Terms & Condition" tab...
+Navigating to "Empty Pallets" tab...
+Step 13: Clicking Cancel to exit...
+Supplier detail navigation test completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/014_Purchase_Order.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.568" errors="0">
+<testcase name="Purchase order" classname="Live_sanity/014_Purchase_Order.spec.js" time="29.568">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 5: Navigating to Purchase Order module...
+Step 6: Clicking on Search by Purchase Order...
+Step 7: Entering search term: Poundland...
+Step 8: Pressing Enter to search...
+Step 9: Clicking refresh icon...
+Purchase Order search test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/015_Import_PO.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="1" skipped="0" time="107.907" errors="0">
+<testcase name="Import PO Flow" classname="Live_sanity/015_Import_PO.spec.js" time="107.907">
+<failure message="015_Import_PO.spec.js:5:5 Import PO Flow" type="FAILURE">
+<![CDATA[  [chromium] › Live_sanity/015_Import_PO.spec.js:5:5 › Import PO Flow ──────────────────────────────
 
-    Error: locator.click: Target page, context or browser has been closed
+    Test timeout of 100000ms exceeded.
+
+    Error: locator.click: Test timeout of 100000ms exceeded.
     Call log:
-      - waiting for getByRole('link', { name: 'More' })
+      - waiting for getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first()
 
 
-      79 |   // Step 12: Open More menu
-      80 |   console.log('Step 12: Clicking on More...');
-    > 81 |   await page.getByRole('link', { name: 'More' }).click();
-         |                                                  ^
-      82 |   await page.waitForTimeout(1000);
-      83 |
-      84 |   // Step 13: Apply Pick List filters
-        at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/028_Pick.spec.js:81:50
+      19 |   // Step 4: Click on the specific PO row link
+      20 |   console.log('Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...');
+    > 21 |   await page.getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first().click();
+         |                                                                                               ^
+      22 |   await page.waitForLoadState('networkidle');
+      23 |   await page.waitForTimeout(2000);
+      24 |
+        at /home/tops/Hitesh/Automation/Poundshop/tests/Live_sanity/015_Import_PO.spec.js:21:95
 
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/video.webm
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Live_sanity-015_Import_PO-Import-PO-Flow-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    Error Context: ../test-results/Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/error-context.md
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Live_sanity-015_Import_PO-Import-PO-Flow-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/Live_sanity-015_Import_PO-Import-PO-Flow-chromium/error-context.md
 ]]>
 </failure>
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 3: Clicking on Import PO...
+Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...
+
+[[ATTACHMENT|Live_sanity-015_Import_PO-Import-PO-Flow-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|Live_sanity-015_Import_PO-Import-PO-Flow-chromium/video.webm]]
+
+[[ATTACHMENT|Live_sanity-015_Import_PO-Import-PO-Flow-chromium/error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/016_Booking_In.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="36.975" errors="0">
+<testcase name="Booking In Flow" classname="Live_sanity/016_Booking_In.spec.js" time="36.975">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Booking In...
+Clicking on "BOOKING IN" from sidebar...
+Step 3: Clicking Previous...
+Step 4: Clicking Next...
+Step 5: Pressing Escape to close modals...
+Step 6: Clicking Filter → Reset...
+Step 7: Clicking Previous twice...
+Step 8: Applying filter for Completed bookings...
+Step 9: Resetting filter...
+Booking In flow test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/017_Import_Booking.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="24.703" errors="0">
+<testcase name="Import booking" classname="Live_sanity/017_Import_Booking.spec.js" time="24.703">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Booking In...
+Step 3: Clicking Page 2...
+Step 4: Clicking Page 3...
+Step 5: Clicking Import File icon...
+Step 6: Clicking Cancel button to close Import popup...
+Import Booking flow test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/018_Booking_In_Report.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="21.172" errors="0">
+<testcase name="Booking in Report" classname="Live_sanity/018_Booking_In_Report.spec.js" time="21.172">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Goods In > Booking In Report...
+Navigation successful.
+Step 3: Opening filter panel...
+Step 4: Selecting From Date (yesterday)...
+Selected yesterday's date: 3
+Step 5: Searching for user Maria Stefania...
+User selected.
+Step 6: Applying filter...
+Step 7: Reopening filter panel and cancelling...
+Test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/019_Putaway.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="32.471" errors="0">
+<testcase name="Put Away Flow" classname="Live_sanity/019_Putaway.spec.js" time="32.471">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Put Away Dashboard...
+Step 3: Opening Put Away Job List...
+Step 4: Exploring job type tabs...
+Put Away test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/020_Pick_Location_Assignment.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="28.744" errors="0">
+<testcase name="Pick Location Assignment" classname="Live_sanity/020_Pick_Location_Assignment.spec.js" time="28.744">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Pick Location Assignments...
+Step 3: Applying filter - Show Products Booked-In...
+Step 4: Applying filter - New Products...
+Step 5: Opening next filter and cancelling...
+Pick Location Assignment flow completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/021_Location_Assignment_Logs.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="26.287" errors="0">
+<testcase name="Location Assignment Logs" classname="Live_sanity/021_Location_Assignment_Logs.spec.js" time="26.287">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Location Assignment Logs...
+Step 3: Opening logs for specific locations...
+Location Assignment Logs flow completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/022_Replen_Request.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.371" errors="0">
+<testcase name="Replen Request" classname="Live_sanity/022_Replen_Request.spec.js" time="17.371">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Storage > Replen Request...
+Page loaded.
+Step 3: Opening filter and setting priority...
+Filter applied.
+Step 4: Reopening filter and cancelling...
+Filter modal cancelled.
+Replen Request flow completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/023_Replen.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="23.064" errors="0">
+<testcase name="Replen" classname="Live_sanity/023_Replen.spec.js" time="23.064">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Clicking on Storage +...
+Clicking on Replen...
+Opening Filter (1)...
+Selecting Emergency location...
+Applying first filter...
+Opening Filter (2)...
+Re-selecting Emergency and selecting Priority-1...
+Applying second filter...
+Reopening filter and clicking Cancel...
+ Replen Test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/024_Smart_Replen.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.065" errors="0">
+<testcase name="Replen" classname="Live_sanity/024_Smart_Replen.spec.js" time="25.065">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Clicking on Storage +...
+Step 3: Clicking on Smart Replen...
+Step 4: Clicking on Order Replen...
+Step 5: Clicking on Smart Replen (exact)...
+Step 6: Opening Filter (1)...
+Step 7: Clicking Apply on Filter...
+Step 8: Reopening Filter (1)...
+Step 9: Clicking Cancel on Filter...
+Smart ReplenTest completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/025_Stock_Check.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="36.276" errors="0">
+<testcase name="Stock Check" classname="Live_sanity/025_Stock_Check.spec.js" time="36.276">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Navigating to Stock Control > Stock Check...
+Applying "Skips" filter...
+Cancelling Filter popup...
+Navigating to Perpetual Inventory...
+Applying "Dated Products" filter...
+Cancelling Filter popup again...
+Navigating to PI Job List...
+Switching to Location Check tab...
+Switching to Stock Adjustments tab...
+Switching to Product Movements tab...
+Applying Location Type filter...
+Cancelling final Filter popup...
+Stock Check test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/026_Move_Product.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="19.793" errors="0">
+<testcase name="Move Product" classname="Live_sanity/026_Move_Product.spec.js" time="19.793">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Move Products...
+Step 3: Entering location barcode...
+Location DP01 entered.
+Step 4: Selecting location DP01...
+Step 5: Confirming location...
+Step 6: Cancelling the movement...
+Move Product test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/027_Order_List.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="28.18" errors="0">
+<testcase name="Order Listing" classname="Live_sanity/027_Order_List.spec.js" time="28.18">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Order Processing...
+Clicked on "Order Processing -"
+Clicked on "Order Processing +"
+Navigated to Orders List page
+Step 3: Applying filter - Status: Despatched...
+Opened filter dialog
+Clicked on status dropdown
+Selected status: Despatched
+Applied the filter
+Step 4: Reopening filter and clicking cancel...
+Filter reopened
+Filter canceled
+Step 5: Applying date range and new status filter...
+Opened filter again
+Clicked on status dropdown again
+Selected status: Processing
+Applied final filter with date and status
+Order Listing test completed.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/028_Pick.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="45.842" errors="0">
+<testcase name="Picking - Smart Pick, Personalized and Order Pick List" classname="Live_sanity/028_Pick.spec.js" time="45.842">
 <system-out>
 <![CDATA[Step 1: Logging in...
 Using login URL: https://erp.poundshop.com/login
@@ -43,12 +580,145 @@ Step 7: Clicking Filter (1)...
 Step 8: Selecting a User...
 Step 9: Applying filter...
 Step 10: Reopening filter and resetting...
-Step 11: Triggering keyboard shortcut (Ctrl/Cmd + O)...
-Step 12: Clicking on More...
-
-[[ATTACHMENT|Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/video.webm]]
-
-[[ATTACHMENT|Live_sanity-028_Pick-Picki-2087b-nalized-and-Order-Pick-List-chromium/error-context.md]]
+Step 12: Clicking on Order Pick List...
+Step 13: Applying Pick List filters (In Progress, Pending, Completed)...
+Step 14: Toggling Completed and In Progress Pick List...
+Step 15: Toggling In Progress and Pending Pick List...
+Step 16: Canceling filter...
+✅ Test completed: Picking - Smart Pick, Personalized and Order Pick List
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/029_Checkout_Despatch_Packing_PackingAdmin_DespatchCreate.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="65.575" errors="0">
+<testcase name="Checkout, Packing, Packing Admin, DespatchCreate" classname="Live_sanity/029_Checkout_Despatch_Packing_PackingAdmin_DespatchCreate.spec.js" time="65.575">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Order Processing -
+Step 3: Navigating to Order Processing +
+Step 4: Navigating to Checkout
+Step 5: Clicking Clear button
+Step 6: Clicking Send to Packing
+Step 6.1: Confirming with OK
+Step 7: Navigating to Despatch Create
+Step 8: Navigating to Packaging Admin
+Step 9: Navigating to Packing
+Step 10: Clicking Pack button
+Step 10.1: Confirming with OK
+Step 11: Reopening Packaging Admin
+Step 12: Navigating to Despatch Listing
+Step 13: Applying Filter (Carrier = Evri)
+Step 14: Selecting From Date (previous day)
+Step 15: Clicking Apply
+Step 16: Re-opening and canceling the filter
+Step 17: Navigating through pagination
+Checkout, Packing, Packing Admin, Despatch Create completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/030_ReversePick_ReverseOverPick.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="29.071" errors="0">
+<testcase name="Reverse Pick and Reverse Over Pick" classname="Live_sanity/030_ReversePick_ReverseOverPick.spec.js" time="29.071">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Reverse Pick
+Step 3: Clicking Move and Next Product
+Step 4: Navigating to Reverse Over Pick
+Step 5: Clicking Report Over Pick
+Step 6: Clicking Cancel
+Step 7: Clicking Move to Pallet Locations
+Step 8: Clicking OK
+Reverse Pick and Reverse Over Pick completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/031_SpickCheckOrders_RefundReasons_FailedOrderList.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="52.933" errors="0">
+<testcase name="Spot Check Orders, Refund Reasons, Failed Order List" classname="Live_sanity/031_SpickCheckOrders_RefundReasons_FailedOrderList.spec.js" time="52.933">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Spot Check Orders
+Step 3: Navigating to Refund Reasons
+Step 4: Opening Refund Reason modal
+Step 5: Closing modal
+Step 6: Opening Wrong Order No detail
+Step 7: Closing detail view
+Step 8: Opening Out of Date No detail
+Step 9: Closing detail view
+Step 10: Sorting Cancel Reason column
+Step 11: Navigating to Failed Order List
+Step 12: Opening Filter
+Step 13: Setting From Date
+Step 14: Applying Filter
+Step 15: Opening Order 200013999
+Step 16: Closing Order Detail View
+Spot Check Orders, Refund Reasons, Failed Order List completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/032_Returns_Refunds.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="84.442" errors="0">
+<testcase name="Returns &amp; Refunds" classname="Live_sanity/032_Returns_Refunds.spec.js" time="84.442">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Returns & Refunds
+Step 3: Searching for Order 3002061485
+Step 4: Clicking refresh
+Step 5: Applying filter: Complete
+Step 6: Applying filter: Open
+Step 7: Clicking Create RMA
+Step 8: Cancelling RMA
+Returns & Refunds completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/033_Carrier_Manifest.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="31.875" errors="0">
+<testcase name="Carrier Manifest" classname="Live_sanity/033_Carrier_Manifest.spec.js" time="31.875">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Carrier Manifest
+Step 3: Opening Settings
+Step 4: Closing Settings
+Step 5: Clicking Royal Mail
+Step 6: Closing Royal Mail modal
+Step 7: Opening Filter
+Step 8: Selecting Carrier ID = 12
+Step 9: Applying Filter
+Step 10: Re-opening Filter and Cancelling
+Carrier Manifest test completed successfully.
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Live_sanity/034_Customer.spec.js" timestamp="2025-07-04T05:31:12.481Z" hostname="chromium" tests="1" failures="0" skipped="0" time="38.499" errors="0">
+<testcase name="Customer" classname="Live_sanity/034_Customer.spec.js" time="38.499">
+<system-out>
+<![CDATA[Step 1: Logging in...
+Using login URL: https://erp.poundshop.com/login
+Username: Hitesh
+Login successful.
+Step 2: Navigating to Customer module
+Step 3: Searching for customer: Louise
+Step 4: Sorting by Customer Id
+Step 5: Sorting by Customer Name
+Step 6: Clicking search box again
+Customer test completed successfully.
 ]]>
 </system-out>
 </testcase>

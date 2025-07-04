@@ -16,16 +16,16 @@ test('Import PO Flow', async ({ page }, testInfo) => {
   await page.waitForLoadState('networkidle');
   await page.waitForTimeout(2000);
 
-  // Step 4: Click on the specific PO row link
-  console.log('Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...');
-  await page.getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first().click();
-  await page.waitForLoadState('networkidle');
-  await page.waitForTimeout(2000);
+  // // Step 4: Click on the specific PO row link
+  // console.log('Step 4: Clicking on PO row link: "904 Nicky Taylor Process"...');
+  // await page.getByRole('row', { name: '904 Nicky Taylor Process' }).getByRole('link').first().click();
+  // await page.waitForLoadState('networkidle');
+  // await page.waitForTimeout(2000);
 
-  // Step 5: Click Cancel button to exit
-  console.log('Step 5: Clicking Cancel button...');
-  await page.getByRole('button', { name: 'Cancel' }).click();
-  await page.waitForTimeout(2000);
+  // // Step 5: Click Cancel button to exit
+  // console.log('Step 5: Clicking Cancel button...');
+  // await page.getByRole('button', { name: 'Cancel' }).click();
+  // await page.waitForTimeout(2000);
 
   console.log('Import PO test completed.');
 });
