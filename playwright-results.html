@@ -1,0 +1,75 @@
+
+  <html><head><title>Search Validation Report</title><style>
+    body { font-family: Arial; padding: 10px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+    th, td { border: 1px solid #ccc; padding: 6px; }
+    th { background: #f4f4f4; }
+    pre { background: #eee; padding: 10px; white-space: pre-wrap; margin-top: 20px; }
+  </style></head><body>
+  <h2>Playwright Search Test Results (Multi-Search + Partial Match)</h2>
+  <table>
+    <tr>
+      <th>Filter</th>
+      <th>Step</th>
+      <th>Result</th>
+      <th>Notes</th>
+      <th>Test Data</th>
+      <th>SKU</th>
+      <th>Title</th>
+      <th>Barcode</th>
+    </tr>
+    
+      <tr>
+        <td>All</td>
+        <td>Query: 276074,645224DTR,Neutradol,Test Config Product-black,241927,TP2S21429772322</td>
+        <td>❌ FAIL</td>
+        <td>❌ Value not found anywhere: "276074", ❌ Value not found anywhere: "645224dtr", ❌ Value not found anywhere: "neutradol", ❌ Value not found anywhere: "test config product-black", ❌ Value not found anywhere: "241927", ❌ Value not found anywhere: "tp2s21429772322"</td>
+        <td>276074,645224DTR,Neutradol,Test Config Product-black,241927,TP2S21429772322</td>
+        <td>276074,645224DTR</td>
+        <td>Neutradol,Test Config Product-black</td>
+        <td>241927,TP2S21429772322</td>
+      </tr>
+    
+      <tr>
+        <td>Our SKU</td>
+        <td>Query: 276074,645224DTR</td>
+        <td>✅ PASS</td>
+        <td>All values matched</td>
+        <td>276074,645224DTR</td>
+        <td>276074,645224DTR</td>
+        <td>Neutradol,Test Config Product-black</td>
+        <td>241927,TP2S21429772322</td>
+      </tr>
+    
+      <tr>
+        <td>Product Title</td>
+        <td>Query: Neutradol,Test Config Product-black</td>
+        <td>❌ FAIL</td>
+        <td>❌ Product Title value not found: "test config product-black"</td>
+        <td>Neutradol,Test Config Product-black</td>
+        <td>276074,645224DTR</td>
+        <td>Neutradol,Test Config Product-black</td>
+        <td>241927,TP2S21429772322</td>
+      </tr>
+    
+      <tr>
+        <td>Barcode</td>
+        <td>Query: 241927,TP2S21429772322</td>
+        <td>✅ PASS</td>
+        <td>All values matched</td>
+        <td>241927,TP2S21429772322</td>
+        <td>276074,645224DTR</td>
+        <td>Neutradol,Test Config Product-black</td>
+        <td>241927,TP2S21429772322</td>
+      </tr>
+    
+  </table>
+  <h3>🪵 Debug Logs</h3>
+  <pre>🔐 Logging in...
+📦 Navigating to Inventory...
+🔍 Filter: All | Query: 276074,645224DTR,Neutradol,Test Config Product-black,241927,TP2S21429772322
+🔍 Filter: Our SKU | Query: 276074,645224DTR
+🔍 Filter: Product Title | Query: Neutradol,Test Config Product-black
+🔍 Filter: Barcode | Query: 241927,TP2S21429772322</pre>
+  </body></html>
+  
