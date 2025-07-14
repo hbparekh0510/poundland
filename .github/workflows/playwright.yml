@@ -25,9 +25,10 @@ jobs:
         run: npx playwright install --with-deps
  
       - name: Run Playwright tests from Live_sanity folder
-        run: npx playwright test Hitesh/Automation/Poundshop/tests/Live_sanity
+        run: npx playwright test tests/Live_sanity
  
       - uses: actions/upload-artifact@v4
+    
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
