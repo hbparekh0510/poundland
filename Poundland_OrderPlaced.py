@@ -82,7 +82,7 @@ try:
                 print("❌ Product page timeout.")
                 continue
 
-            qty = str(random.randint(5, 10))
+            qty = str(random.randint(15, 20))
             try:
                 qty_input = WebDriverWait(driver, 5).until(EC.element_to_be_clickable((By.XPATH, "//input[@type='number']")))
                 driver.execute_script("arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input', { bubbles: true })); arguments[0].dispatchEvent(new Event('change', { bubbles: true }));", qty_input, qty)

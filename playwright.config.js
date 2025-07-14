@@ -24,7 +24,7 @@ reporter: [
     use: {
   headless: true, // <--- change this line
   baseURL: process.env.BASE_URL || 'https://preprod.poundshop.com/login',
-  slowMo: 2000,
+  slowMo: 0,
   trace: 'on-first-retry',
   screenshot: 'only-on-failure',
   video: 'retain-on-failure',
