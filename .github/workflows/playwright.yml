@@ -1,5 +1,7 @@
 name: Playwright Tests
 
+runs-on: self-hosted
+
 on:
   push:
     branches: [ main, master ]
