@@ -1,7 +1,5 @@
 name: Playwright Tests
 
-runs-on: self-hosted
-
 on:
   push:
     branches: [ main, master ]
@@ -11,7 +9,7 @@ on:
 jobs:
   test:
     timeout-minutes: 60
-    runs-on: ubuntu-latest
+    runs-on: self-hosted  # ✅ Use self-hosted runner with VPN access
 
     steps:
       - uses: actions/checkout@v4
